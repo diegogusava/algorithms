@@ -1,4 +1,4 @@
-package br.com.diegogusava.graphs.mst;
+package br.com.diegogusava.graphs.mst.kruskal;
 
 public class Edge implements Comparable<Edge> {
 

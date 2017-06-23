@@ -1,4 +1,4 @@
-package br.com.diegogusava.graphs.mst;
+package br.com.diegogusava.graphs.mst.kruskal;
 
 import br.com.diegogusava.datastructures.disjoinset.Node;
 
