@@ -1,8 +1,7 @@
-package br.com.diegogusava.graphs.shortspath;
+package br.com.diegogusava.graphs.shortspath.bellmanford;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Stack;
 
 /**
  * Running Time: O(E * V)

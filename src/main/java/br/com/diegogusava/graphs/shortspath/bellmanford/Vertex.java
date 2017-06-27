@@ -1,4 +1,4 @@
-package br.com.diegogusava.graphs.shortspath;
+package br.com.diegogusava.graphs.shortspath.bellmanford;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,12 @@
 package br.com.diegogusava.graphs.shortspath;
 
+import br.com.diegogusava.graphs.shortspath.bellmanford.BellmanFord;
+import br.com.diegogusava.graphs.shortspath.bellmanford.Edge;
+import br.com.diegogusava.graphs.shortspath.bellmanford.Vertex;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 
 public class BellmanFordTest {

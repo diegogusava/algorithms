@@ -1,4 +1,4 @@
-package br.com.diegogusava.graphs.shortspath;
+package br.com.diegogusava.graphs.shortspath.bellmanford;
 
 public class Edge {
 
