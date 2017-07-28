@@ -29,35 +29,37 @@ public class MergeSort {
     private static void merge(int[] values, int[] temp, int low, int middle, int high) {
 
         //Copy the numbers that will be comparated
-        for (int i = low; i < high; i++) {
+        for (int i = low; i <= high; i++) {
             temp[i] = values[i];
         }
 
-        int i = low;
-        int j = middle + 1;
-        int k = low;
+        int indexLeftSubArray = low;
+        int indexRightSubArray = middle + 1;
+        int indexTempArray = low;
 
-        while (i <= middle && j <= high) {
-            if (temp[i] < temp[j]) {
-                values[k] = temp[i];
-                i++;
+        while (indexLeftSubArray <= middle && indexRightSubArray <= high) {
+
+            if (temp[indexLeftSubArray] <= temp[indexRightSubArray]) {
+                values[indexTempArray] = temp[indexLeftSubArray];
+                indexLeftSubArray++;
             } else {
-                values[k] = temp[j];
-                j++;
+                values[indexTempArray] = temp[indexRightSubArray];
+                indexRightSubArray++;
             }
-            k++;
+
+            indexTempArray++;
         }
 
-        while (i <= middle) {
-            values[k] = values[i];
-            i++;
-            k++;
+        while (indexLeftSubArray <= middle) {
+            values[indexTempArray] = temp[indexLeftSubArray];
+            indexLeftSubArray++;
+            indexTempArray++;
         }
 
-        while (j <= high) {
-            values[k] = values[j];
-            j++;
-            k++;
+        while (indexRightSubArray <= high) {
+            values[indexTempArray] = temp[indexRightSubArray];
+            indexRightSubArray++;
+            indexTempArray++;
         }
 
     }
